@@ -19,13 +19,16 @@ function popup(){
 }
 
 </script>
-
+<style>
+	.cell{float: left; padding: 50px 50px 50px 50px}
+</style>
 
 <body>
 
 <header>
 <h1>여기는 여러가지 실험을 하는 곳이에요</h1>
 </header>
+
 
 <nav>
 <ul class="h-menu">
@@ -53,10 +56,10 @@ function popup(){
 <div id="main">
 	<div class="row cells3">
                     <div class="cell">
-                        <h5>코난</h5>
                         <div class="image-container">
-                            <div class="frame"><img src="${pageContext.request.contextPath}/assets/images/1.jpg"></div>
-                            <div class="image-overlay op-green">
+                            <div class="frame"><img src="${pageContext.request.contextPath}/assets/image/1.jpg" class="imgcard" 
+                            style="width: 500px; height: 400px;"></div>
+                            <div class="image-overlay">
                                 <h2>코난</h2>
                                 <p>
                                    	 코난 사진이다
@@ -65,9 +68,9 @@ function popup(){
                         </div>
                     </div>
                     <div class="cell">
-                        <h5>신이치</h5>
                         <div class="image-container">
-                            <div class="frame"><img src="images/2.jpg"></div>
+                            <div class="frame"><img src="${pageContext.request.contextPath}/assets/image/2.jpg"  class="imgcard"
+                            style="width: 500px; height: 400px;"></div>
                             <div class="image-overlay">
                                 <h2>신이치</h2>
                                 <p>
@@ -77,9 +80,9 @@ function popup(){
                         </div>
                     </div>
 					<div class="cell">
-                        <h5>코난과 신이치가 겹쳐있음</h5>
                         <div class="image-container">
-                            <div class="frame"><img src="images/2.jpg"></div>
+                            <div class="frame"><img src="${pageContext.request.contextPath}/assets/image/3.jpg" class="imgcard"
+                            style="width: 500px; height: 400px;"></div>
                             <div class="image-overlay">
                                 <h2></h2>
                                 <p>
@@ -89,7 +92,9 @@ function popup(){
                         </div>
                     </div>
 </div>
+<div style="clear: left;">
 
+</div>
 
 <form action="?">
 
