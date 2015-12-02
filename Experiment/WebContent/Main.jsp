@@ -20,7 +20,7 @@ function popup(){
 
 </script>
 <style>
-	.cell{float: left; padding: 50px 50px 50px 50px}
+	.cell{float: left; padding: 20px 20px 20px 20px}
 </style>
 
 <body>
@@ -36,10 +36,11 @@ function popup(){
 	<li><a href="#"> 151202 수업</a>
 	<li><a href="#"> 151209 수업</a>
 	<li><a href="#"> 151216 수업</a>
-	<a href="#" class="dropdown-toggle">More...</a>
+	<li><a href="#" class="dropdown-toggle">More...</a>
         <ul  class="d-menu" data-role="dropdown">
             <li><a href="#">About</a></li>
             <li><a href="#">Partners</a></li>
+            </li>
 </ul>
 </li>
 <li class="place-right no-hovered">
@@ -98,7 +99,7 @@ function popup(){
 
 <form action="?">
 
-<input type="button" value="팝업이당" onclick="popup();"><br/>
+<input type="button" value="구글에 한번 들어가볼까요~?" onclick="popup();"><br/>
 
 첫번째 수업 : <input type="date" id="firstDate"><br/>
 <input type="submit" value="입력을 하는 것이다 서버로 가라 휘리릭">
