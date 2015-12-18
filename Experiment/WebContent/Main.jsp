@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <link href="${pageContext.request.contextPath}/assets/css/metro.min.css" rel="stylesheet">
-
+<link href="${pageContext.request.contextPath}/assets/css/metro-icons.css" rel="stylesheet">
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="${pageContext.request.contextPath}/assets/js/metro.js"></script>
 
@@ -21,25 +21,23 @@ function popup(){
 </script>
 <style>
 	.cell{float: left; padding: 20px 20px 20px 20px}
+	
 </style>
 
 <body>
 
 <header>
-<h1>여기는 여러가지 실험을 하는 곳이에요</h1>
 </header>
 
 
 <nav>
 <ul class="h-menu">
-	<li><a href="#"> 151125 수업</a>
-	<li><a href="#"> 151202 수업</a>
-	<li><a href="#"> 151209 수업</a>
-	<li><a href="#"> 151216 수업</a>
-	<li><a href="#" class="dropdown-toggle">More...</a>
+	<li><a href="#"> <span class="mif-thumbs-up mif-ani-bounce"></span>베스트</a>
+	<li><a href="#"> 보관함</a>
+	<li><a href="#" class="dropdown-toggle">설정</a>
         <ul  class="d-menu" data-role="dropdown">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Partners</a></li>
+            <li><a href="#">개인정보</a></li>
+            <li><a href="#">알림</a></li>
             </li>
 </ul>
 </li>
@@ -47,23 +45,25 @@ function popup(){
         <form>
             <div class="input-control text" style="width: 250px; margin-right: 10px">
                 <input type="text" placeholder="Search...">
-                <button class="button"><span class="mif-search"></span></button>
+                <button class="button primary"><span class="mif-search"></span></button>
             </div>
         </form>
     </li>
     </ul>
 </nav>
 
-<div id="main">
-	<div class="row cells3">
+<div id="main" class="bg-ribbed-cyan">
+	
+	<div class="row cells2">
                     <div class="cell">
                         <div class="image-container">
                             <div class="frame"><img src="${pageContext.request.contextPath}/assets/image/1.jpg" class="imgcard" 
-                            style="width: 500px; height: 400px;"></div>
+                            style="width: 550px; height: 500px;"></div>
                             <div class="image-overlay">
                                 <h2>코난</h2>
                                 <p>
-                                   	 코난 사진이다
+                                   	 에도가와 코난<br/><br/>
+                                   	 2015.12.18
                                 </p>
                             </div>
                         </div>
@@ -71,51 +71,84 @@ function popup(){
                     <div class="cell">
                         <div class="image-container">
                             <div class="frame"><img src="${pageContext.request.contextPath}/assets/image/2.jpg"  class="imgcard"
-                            style="width: 500px; height: 400px;"></div>
+                            style="width: 550px; height: 500px;"></div>
                             <div class="image-overlay">
                                 <h2>신이치</h2>
                                 <p>
-                                    	신이치 사진이다
+                                    	쿠도 신이치<br/><br/>
+                                    	2015.12.19
                                 </p>
                             </div>
                         </div>
                     </div>
+                       <div class="cell">
+                        <div class="image-container">
+                            <div class="frame"><img src="${pageContext.request.contextPath}/assets/image/3.JPG"  class="imgcard"
+                            style="width: 350px; height: 350px;"></div>
+                            <div class="image-overlay">
+                                <h2>크리스마스</h2>
+                                <p>
+                                    	차지연<br/><br/>
+                                    	2015.08.20
+                                </p>
+                            </div>                        
+                    	</div>				
+					</div>
+					</div>
+					<div class="row cells2">
 					<div class="cell">
                         <div class="image-container">
-                            <div class="frame"><img src="${pageContext.request.contextPath}/assets/image/3.jpg" class="imgcard"
-                            style="width: 500px; height: 400px;"></div>
+                            <div class="frame"><img src="${pageContext.request.contextPath}/assets/image/4.jpg"  class="imgcard"
+                            style="width: 250px; height: 250px;"></div>
                             <div class="image-overlay">
-                                <h2></h2>
+                                <h2>제주도</h2>
                                 <p>
-                            		       코난과 신이치가 겹쳐있다
+                                    	차지연<br/><br/>
+                                    	2015.08.20
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-</div>
+                            </div>                        
+                    	</div>				
+					</div>
+					<div class="cell">
+                        <div class="image-container">
+                            <div class="frame"><img src="${pageContext.request.contextPath}/assets/image/5.JPG"  class="imgcard"
+                            style="width: 250px; height: 250px;"></div>
+                            <div class="image-overlay">
+                                <h2>홍콩</h2>
+                                <p>
+                                    	차지연<br/><br/>
+                                    	2014.09.20
+                                </p>
+                            </div>                        
+                    	</div>				
+					</div>
+					<div class="cell">
+                        <div class="image-container">
+                            <div class="frame"><img src="${pageContext.request.contextPath}/assets/image/6.jpg"  class="imgcard"
+                            style="width: 250px; height: 250px;"></div>
+                            <div class="image-overlay">
+                                <h2>사무실</h2>
+                                <p>
+                                    	차지연<br/><br/>
+                                    	2015.12.17
+                                </p>
+                            </div>                        
+                    	</div>				
+					</div>
 <div style="clear: left;">
 
 </div>
 
 <form action="?">
 
-<input type="button" value="구글에 한번 들어가볼까요~?" onclick="popup();"><br/>
+<button class="button primary" onclick="popup();">구글 접속</button><br/>
 
-첫번째 수업 : <input type="date" id="firstDate"><br/>
-<input type="submit" value="입력을 하는 것이다 서버로 가라 휘리릭">
+<button class="button primary">추가</button>
 </form>
+</div>
 </div>
 
 
-<footer>
-<ul>
-	<li><a href="#"> 왕</a>
-	<li><a href="#"> 차</a>
-	<li><a href="#"> 왕지</a>
-	<li><a href="#"> 차지</a>
-</ul>
-
-</footer>
 
 
 
