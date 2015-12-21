@@ -32,7 +32,7 @@ function popup(){
 
 <nav>
 <ul class="h-menu">
-	<li><a href="#"> <span class="mif-thumbs-up mif-ani-bounce"></span>베스트</a>
+	<li><a href="#"> <span class="icon mif-tools mif-ani-bounce"></span>베스트</a>
 	<li><a href="#"> 보관함</a>
 	<li><a href="#" class="dropdown-toggle">설정</a>
         <ul  class="d-menu" data-role="dropdown">
@@ -43,22 +43,28 @@ function popup(){
 </li>
 <li class="place-right no-hovered">
         <form>
+     
             <div class="input-control text" style="width: 250px; margin-right: 10px">
                 <input type="text" placeholder="Search...">
-                <button class="button primary"><span class="mif-search"></span></button>
+                <button class="button primary">
+                
+                <span class="icon mif-search"></span></button>
             </div>
         </form>
     </li>
     </ul>
 </nav>
 
-<div id="main" class="bg-ribbed-cyan">
-	
+<div id="main" class="bg-cyan">
+
+	<div class="tile-area no-padding">
 	<div class="row cells2">
+	<div class="tile-container bg-darkCobalt" >
+		<div class="tile-large" data-role="tile">
                     <div class="cell">
                         <div class="image-container">
                             <div class="frame"><img src="${pageContext.request.contextPath}/assets/image/1.jpg" class="imgcard" 
-                            style="width: 550px; height: 500px;"></div>
+                           ></div>
                             <div class="image-overlay">
                                 <h2>코난</h2>
                                 <p>
@@ -68,10 +74,14 @@ function popup(){
                             </div>
                         </div>
                     </div>
+                    </div>
+          
+          <div class="tile-square" data-role="tile">
+           
                     <div class="cell">
                         <div class="image-container">
                             <div class="frame"><img src="${pageContext.request.contextPath}/assets/image/2.jpg"  class="imgcard"
-                            style="width: 550px; height: 500px;"></div>
+                            ></div>
                             <div class="image-overlay">
                                 <h2>신이치</h2>
                                 <p>
@@ -81,10 +91,12 @@ function popup(){
                             </div>
                         </div>
                     </div>
+           </div>
+           <div class="tile-small" data-role="tile">         
                        <div class="cell">
                         <div class="image-container">
                             <div class="frame"><img src="${pageContext.request.contextPath}/assets/image/3.JPG"  class="imgcard"
-                            style="width: 350px; height: 350px;"></div>
+                            ></div>
                             <div class="image-overlay">
                                 <h2>크리스마스</h2>
                                 <p>
@@ -95,11 +107,13 @@ function popup(){
                     	</div>				
 					</div>
 					</div>
+			</div>
+			 <div class="tile-small" data-role="tile">         		
 					<div class="row cells2">
 					<div class="cell">
                         <div class="image-container">
                             <div class="frame"><img src="${pageContext.request.contextPath}/assets/image/4.jpg"  class="imgcard"
-                            style="width: 250px; height: 250px;"></div>
+                           ></div>
                             <div class="image-overlay">
                                 <h2>제주도</h2>
                                 <p>
@@ -109,10 +123,12 @@ function popup(){
                             </div>                        
                     	</div>				
 					</div>
+			</div>
+			 <div class="tile-small" data-role="tile">         		
 					<div class="cell">
                         <div class="image-container">
                             <div class="frame"><img src="${pageContext.request.contextPath}/assets/image/5.JPG"  class="imgcard"
-                            style="width: 250px; height: 250px;"></div>
+                            ></div>
                             <div class="image-overlay">
                                 <h2>홍콩</h2>
                                 <p>
@@ -122,10 +138,12 @@ function popup(){
                             </div>                        
                     	</div>				
 					</div>
+			 </div>
+			  <div class="tile-small" data-role="tile">         
 					<div class="cell">
                         <div class="image-container">
                             <div class="frame"><img src="${pageContext.request.contextPath}/assets/image/6.jpg"  class="imgcard"
-                            style="width: 250px; height: 250px;"></div>
+                            ></div>
                             <div class="image-overlay">
                                 <h2>사무실</h2>
                                 <p>
@@ -135,6 +153,23 @@ function popup(){
                             </div>                        
                     	</div>				
 					</div>
+			</div>
+			 <div class="tile-wide" data-role="tile">         		
+					<div class="cell">
+                        <div class="image-container">
+                            <div class="frame"><img src="${pageContext.request.contextPath}/assets/image/7.jpg"  class="imgcard"
+                           ></div>
+                            <div class="image-overlay">
+                                <h2>걷기대회</h2>
+                                <p>
+                                    	차지연<br/><br/>
+                                    	2015.05.17
+                                </p>
+                            </div>                        
+                    	</div>				
+					</div>
+				</div>	
+		
 <div style="clear: left;">
 
 </div>
@@ -145,9 +180,10 @@ function popup(){
 
 <button class="button primary">추가</button>
 </form>
+	</div>	
 </div>
 </div>
-
+</div>
 
 
 
